@@ -23,6 +23,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     get static_pages_contact_url
     assert_response :success
     assert_select "title", "contact | Ruby on Rails Tutorial Sample App"
+    # 上記テストに記載されている文字列とViewに記載している文字列が一緒か確認してみて下さい。
   end
 
 end
